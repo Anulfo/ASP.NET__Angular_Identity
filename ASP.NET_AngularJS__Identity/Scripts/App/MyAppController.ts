@@ -18,7 +18,7 @@
         }
 
         private getValues(): void {
-            this.$http.get("/api/sample")
+            this.$http.get("/api/not sample")
                 .then((response: ng.IHttpPromiseCallbackArg<string[]>) => {
                     this.isVisibleErrorMessage = false;
                     this.values = response.data;

@@ -12,7 +12,7 @@ var App;
         }
         MyAppController.prototype.getValues = function () {
             var _this = this;
-            this.$http.get("/api/sample")
+            this.$http.get("/api/not sample")
                 .then(function (response) {
                 _this.isVisibleErrorMessage = false;
                 _this.values = response.data;
@@ -29,3 +29,4 @@ var App;
     App.MyAppController = MyAppController;
     angular.module("app").controller("MyAppController", MyAppController);
 })(App || (App = {}));
+//# sourceMappingURL=MyAppController.js.map

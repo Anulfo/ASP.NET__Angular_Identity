@@ -6,10 +6,13 @@ var App;
         return {
             restrict: "EA",
             link: link,
-            template: "<h1>Hello, world</h1>"
+            templateUrl: "/Scripts/App/my-app.html",
+            controller: App.MyAppController,
+            controllerAs: "vm"
         };
         function link(scope, element, attrs) {
         }
     }
     angular.module("app").directive("myApp", MyAppDirective);
 })(App || (App = {}));
+//# sourceMappingURL=MyAppDirective.js.map
