@@ -12,14 +12,19 @@ var App;
         }
         MyAppController.prototype.getValues = function () {
             var _this = this;
-            this.$http.get("/api/not sample")
+            this.$http.get("/api/sample")
                 .then(function (response) {
                 _this.isVisibleErrorMessage = false;
                 _this.values = response.data;
             })
                 .catch((function (reason) {
-                _this.isVisibleErrorMessage = true;
-                _this.errorMessage = reason.statusText;
+                if (reason.status == 401) {
+                    _this.$window.location.href = '/Account/Login?returnurl=/Home/About';
+                }
+                else {
+                    _this.isVisibleErrorMessage = true;
+                    _this.errorMessage = reason.statusText;
+                }
                 return _this.values;
             }));
         };

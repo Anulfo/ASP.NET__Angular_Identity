@@ -18,14 +18,19 @@
         }
 
         private getValues(): void {
-            this.$http.get("/api/not sample")
+            this.$http.get("/api/sample")
                 .then((response: ng.IHttpPromiseCallbackArg<string[]>) => {
                     this.isVisibleErrorMessage = false;
                     this.values = response.data;
                 })
                 .catch(((reason: ng.IHttpPromiseCallbackArg<string[]>) => {
+                    if (reason.status == 401) {
+                        this.$window.location.href = '/Account/Login?returnurl=/Home/About';
+                    }
+                    else {
                     this.isVisibleErrorMessage = true;
                     this.errorMessage = reason.statusText;
+                    }
                     return this.values;
                 }));
         }

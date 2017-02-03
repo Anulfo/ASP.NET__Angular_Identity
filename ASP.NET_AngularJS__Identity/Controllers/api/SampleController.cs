@@ -7,6 +7,7 @@ using System.Web.Http;
 
 namespace ASP.NET_AngularJS__Identity.Controllers.api
 {
+    [Authorize]
     public class SampleController : ApiController
     {
         // GET api/<controller>
