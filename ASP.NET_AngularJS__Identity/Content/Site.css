@@ -22,3 +22,19 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.logoContainer {
+    background-color: white;
+    background-image: url(../Images/ScripturallySoundTransparentLogo.png);
+    background-repeat:no-repeat;
+    height: 1000px;
+}
+
+.spacer {
+    height: 200px;
+}
+
+.navbar {
+    background-color: #662d91;
+    height: 100px;
+}

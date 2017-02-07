@@ -230,6 +230,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\blackwhiteworship.png" />
+    <Content Include="Images\concertBlackAndWhite.jpg" />
+    <Content Include="Images\ScripturallySoundLogo.png" />
+    <Content Include="Images\ScripturallySoundTransparentLogo.png" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
