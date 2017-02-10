@@ -13,7 +13,7 @@ namespace ASP.NET_AngularJS__Identity.Controllers.api
         // GET api/<controller>
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "Anulfo", "Ordaz" };
         }
 
         // GET api/<controller>/5

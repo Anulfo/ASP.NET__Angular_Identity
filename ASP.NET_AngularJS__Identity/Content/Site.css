@@ -1,13 +1,13 @@
-﻿body {
+﻿/*body {
     padding-top: 50px;
     padding-bottom: 20px;
-}
+}*/
 
 /* Set padding to keep content from hitting the edges */
-.body-content {
+/*.body-content {
     padding-left: 15px;
     padding-right: 15px;
-}
+}*/
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -23,18 +23,20 @@ textarea {
     max-width: 280px;
 }
 
-.logoContainer {
-    background-color: white;
-    background-image: url(../Images/ScripturallySoundTransparentLogo.png);
-    background-repeat:no-repeat;
-    height: 1000px;
+.topSpacer {
+    height: 70px;
 }
 
-.spacer {
-    height: 200px;
+.bottomSpacer {
+    height: 180px;
 }
-
 .navbar {
     background-color: #662d91;
     height: 100px;
+}
+
+.backgroundContainer {
+    background-image: url(../Images/concertBlackAndWhite.jpg);
+    background-attachment: fixed; 
+    background-position: center;
 }
